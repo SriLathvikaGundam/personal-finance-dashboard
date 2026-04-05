@@ -27,7 +27,7 @@ A modern and responsive **Personal Finance Dashboard** built using React, Vite, 
 
 ## 🚀 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉 https://personal-finance-dashboard-delta-ruby.vercel.app/
 
 ---
 
