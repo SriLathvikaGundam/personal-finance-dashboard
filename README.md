@@ -1,16 +1,69 @@
-# React + Vite
+🚀 Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Personal Finance Dashboard built using React, Vite, and Tailwind CSS to help users visualize and manage financial data effectively.
 
-Currently, two official plugins are available:
+📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Managing personal finances can be challenging without proper visualization. This project provides a clean and intuitive dashboard interface to track financial data, analyze spending patterns, and gain useful insights.
 
-## React Compiler
+Personal finance dashboards are widely used to track income, expenses, and financial trends through visual analytics, making decision-making easier.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
+📊 Interactive dashboard UI
+🌙 Dark mode support
+📱 Fully responsive design
+📈 Data visualization (charts & analytics)
+⚡ Fast performance with Vite
+🎨 Clean and modern UI using Tailwind CSS
+🛠️ Tech Stack
+Frontend: React.js
+Build Tool: Vite
+Styling: Tailwind CSS
+State Management: (if used — add Zustand/Context API)
+Deployment: Vercel
+🚀 Live Demo
+👉https://personal-finance-dashboard-delta-ruby.vercel.app/
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📂 Project Structure
+personal-finance-dashboard/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── store/
+│   └── App.jsx
+│── package.json
+│── vite.config.js
+│── index.html
+⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/SriLathvikaGundam/personal-finance-dashboard.git
+
+Navigate to the project folder:
+
+cd personal-finance-dashboard
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+🧠 What I Learned
+Building responsive UI with Tailwind CSS
+Managing components in React
+Structuring a scalable frontend project
+Deploying projects using Vercel
+Version control using Git & GitHub
+
+🔮 Future Improvements
+Add authentication system
+Integrate real financial data APIs
+Add budgeting & expense tracking features
+Improve charts with advanced analytics
+Backend integration for data storage
+
