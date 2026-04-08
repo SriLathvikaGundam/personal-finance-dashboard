@@ -4,7 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Transactions from './pages/Transactions'
 import Budgets from './pages/Budgets'
 import Reports from './pages/Reports'
-import Goals from './pages/Goals'        // ← This line was missing
+import Goals from './pages/Goals'          // ← Must be imported
 
 function App() {
   return (
