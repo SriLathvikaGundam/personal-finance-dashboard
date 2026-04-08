@@ -6,18 +6,18 @@ import {
   PieChart, Pie, Cell, 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer 
 } from 'recharts'
+import Insights from '../components/Insights'   // ← Import here
 
 export default function Dashboard() {
   const { 
     transactions, 
-    budgets, 
     getBalance, 
     getTotalIncome, 
     getTotalExpense, 
     addTransaction 
   } = useFinanceStore()
 
-  // Add realistic sample data on first load
+  // Sample data (kept for demo)
   useEffect(() => {
     if (transactions.length === 0) {
       const samples = [
@@ -26,7 +26,6 @@ export default function Dashboard() {
         { type: 'expense', amount: 4500, category: 'Food', description: 'Groceries & Vegetables' },
         { type: 'expense', amount: 2200, category: 'Transport', description: 'Fuel & Ola' },
         { type: 'income', amount: 12000, category: 'Freelance', description: 'Web Development Project' },
-        { type: 'expense', amount: 1800, category: 'Entertainment', description: 'Movie & Dinner' },
       ]
       samples.forEach(data => addTransaction(data))
     }
@@ -52,7 +51,7 @@ export default function Dashboard() {
 
   const pieData = Object.entries(categoryData).map(([name, value]) => ({ name, value }))
 
-  const COLORS = ['#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#6366f1']
+  const COLORS = ['#10b981', '#f59e0b', '#ef4444', '#8b5cf6']
 
   return (
     <div className="p-8 dark:bg-gray-950 min-h-screen">
@@ -130,6 +129,9 @@ export default function Dashboard() {
           </ResponsiveContainer>
         </div>
       </div>
+
+      {/* Financial Insights - New Section */}
+      <Insights />
 
       {/* Recent Transactions */}
       <div className="mt-8 bg-white dark:bg-gray-900 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-800">

@@ -5,6 +5,7 @@ import Transactions from './pages/Transactions'
 import Budgets from './pages/Budgets'
 import Reports from './pages/Reports'
 
+
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/transactions" element={<Transactions />} />
             <Route path="/budgets" element={<Budgets />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/goals" element={<Goals />} />
           </Routes>
         </main>
       </div>

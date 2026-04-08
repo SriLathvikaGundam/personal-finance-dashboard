@@ -1,4 +1,4 @@
-import { Home, CreditCard, Wallet, PieChart, LogOut, Moon, Sun } from 'lucide-react'
+import { Home, CreditCard, Wallet, PieChart, Target, LogOut, Moon, Sun } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import useFinanceStore from '../store/useFinanceStore'
 
@@ -6,6 +6,7 @@ const menuItems = [
   { path: '/', icon: Home, label: 'Dashboard' },
   { path: '/transactions', icon: CreditCard, label: 'Transactions' },
   { path: '/budgets', icon: Wallet, label: 'Budgets' },
+  { path: '/goals', icon: Target, label: 'Savings Goals' },
   { path: '/reports', icon: PieChart, label: 'Reports' },
 ]
 
@@ -30,8 +31,8 @@ export default function Sidebar() {
             to={item.path}
             className={({ isActive }) =>
               `flex items-center gap-3 px-4 py-3 mb-1 rounded-2xl text-sm font-medium transition-all ${
-                isActive 
-                  ? 'bg-emerald-600 text-white' 
+                isActive
+                  ? 'bg-emerald-600 text-white'
                   : 'hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300'
               }`
             }
@@ -42,7 +43,7 @@ export default function Sidebar() {
         ))}
       </nav>
 
-      {/* Dark Mode Toggle + Logout */}
+      {/* Dark Mode + Logout */}
       <div className="p-4 border-t border-gray-200 dark:border-gray-800 space-y-2">
         <button
           onClick={toggleDarkMode}
